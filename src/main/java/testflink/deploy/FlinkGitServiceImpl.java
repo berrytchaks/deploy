@@ -80,7 +80,7 @@ public class FlinkGitServiceImpl implements FlinkGitService{
 
 	private String imageUserPassword="";
 	
-	private String flinkPath="/home/streamly/flink";
+	private String flinkPath="/home/user/flink";
 
 	private String flinkPathForSsh="/home/ubuntu/flink";
 	

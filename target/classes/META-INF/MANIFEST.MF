@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: deploy
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: root
-Implementation-Vendor-Id: testflink
-Build-Jdk: 1.8.0_65
+Built-By: pfenkam
+Implementation-Vendor-Id: flink-topology
+Build-Jdk: 1.8.0_121
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
