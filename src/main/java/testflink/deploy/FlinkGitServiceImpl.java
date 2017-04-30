@@ -17,23 +17,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.UUID;
 
-import org.apache.flink.api.java.ExecutionEnvironment;
-import org.apache.flink.api.java.RemoteEnvironment;
-import org.apache.flink.storm.api.FlinkClient;
-import org.apache.flink.storm.api.FlinkSubmitter;
 import org.apache.flink.storm.api.FlinkTopology;
-//import org.apache.flink.storm.util.BoltFileSink;
-//import org.apache.flink.storm.util.BoltPrintSink;
-import org.apache.flink.storm.util.NullTerminatingSpout;
-//import org.apache.flink.storm.util.OutputFormatter;
-//import org.apache.flink.storm.util.TupleOutputFormatter;
-//import org.apache.flink.storm.wordcount.operators.BoltCounter;
-//import org.apache.flink.storm.wordcount.operators.BoltCounterByName;
-//import org.apache.flink.storm.wordcount.operators.BoltTokenizer;
-//import org.apache.flink.storm.wordcount.operators.BoltTokenizerByName;
-//import org.apache.flink.storm.wordcount.operators.WordCountFileSpout;
-//import org.apache.flink.storm.wordcount.operators.WordCountInMemorySpout;
-import org.apache.flink.streaming.api.environment.RemoteStreamEnvironment;
 import org.apache.maven.shared.invoker.DefaultInvocationRequest;
 import org.apache.maven.shared.invoker.DefaultInvoker;
 import org.apache.maven.shared.invoker.InvocationRequest;
@@ -47,7 +31,6 @@ import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.api.errors.TransportException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.jcraft.jsch.Channel;
@@ -56,19 +39,7 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 
 import backtype.storm.Config;
-import backtype.storm.generated.AlreadyAliveException;
-import backtype.storm.topology.TopologyBuilder;
-import backtype.storm.tuple.Fields;
-import backtype.storm.tuple.Tuple;
 import backtype.storm.utils.Utils;
-import org.apache.flink.client.RemoteExecutor; 
-import org.apache.flink.client.program.Client; 
-import org.apache.flink.client.program.PackagedProgram; 
-import org.apache.flink.client.program.ProgramInvocationException; 
-import org.apache.flink.configuration.Configuration; 
-
-import java.io.File; 
-import java.net.InetSocketAddress; 
 
 @Service
 public class FlinkGitServiceImpl implements FlinkGitService{

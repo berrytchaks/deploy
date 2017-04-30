@@ -46,21 +46,6 @@
 		    <artifactId>jsch</artifactId>
 		    <version>0.1.54</version>
 		</dependency>
-
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework.boot</groupId> -->
-		<!-- <artifactId>spring-boot-starter-thymeleaf</artifactId> -->
-		<!-- <exclusions> -->
-		<!-- <exclusion> -->
-		<!-- <groupId>ch.qos.logback</groupId> -->
-		<!-- <artifactId>logback-classic</artifactId> -->
-		<!-- </exclusion> -->
-		<!-- <exclusion> -->
-		<!-- <artifactId>log4j-over-slf4j</artifactId> -->
-		<!-- <groupId>org.slf4j</groupId> -->
-		<!-- </exclusion> -->
-		<!-- </exclusions> -->
-		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -109,44 +94,11 @@
 			<version>2.2</version>
 		</dependency>
 
-		<!-- <dependency> -->
-		<!-- <groupId>org.apache.flink</groupId> -->
-		<!-- <artifactId>flink-storm</artifactId> -->
-		<!-- <version>0.10.1</version> -->
-		<!-- </dependency> -->
-
-
-		<!-- <dependency> -->
-		<!-- <groupId>org.apache.flink</groupId> -->
-		<!-- <artifactId>flink-storm-examples_2.11</artifactId> -->
-		<!-- <version>1.0.0</version> -->
-		<!-- <exclusions> -->
-		<!-- <exclusion> -->
-		<!-- <artifactId>slf4j-api</artifactId> -->
-		<!-- <groupId>org.slf4j</groupId> -->
-		<!-- </exclusion> -->
-		<!-- <exclusion> -->
-		<!-- <artifactId>slf4j-log4j12</artifactId> -->
-		<!-- <groupId>org.slf4j</groupId> -->
-		<!-- </exclusion> -->
-		<!-- <exclusion> -->
-		<!-- <artifactId>log4j</artifactId> -->
-		<!-- <groupId>log4j</groupId> -->
-		<!-- </exclusion> -->
-		<!-- </exclusions> -->
-		<!-- </dependency> -->
-
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-storm_2.10</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<version>1.2.0</version>
 		</dependency>
-
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.apache.flink</groupId> -->
-<!-- 			<artifactId>flink-storm_2.11</artifactId> -->
-<!-- 			<version>0.10.0</version> -->
-<!-- 		</dependency> -->
 
 
 		<dependency>
@@ -186,11 +138,6 @@
 	</build>
 
 	<repositories>
-		<repository>
-			<id>publicesrepo</id>
-			<name>publicesrepo</name>
-			<url>http://maven.elasticsearch.org/public-releases</url>
-		</repository>
 		<repository>
 			<id>publicclojars</id>
 			<name>publicclojars</name>
